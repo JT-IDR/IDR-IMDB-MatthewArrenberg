@@ -1,0 +1,39 @@
+ .posts {
+  display: flex;
+  align-items: center;
+}
+
+.post {
+  margin: 5px;
+  height: 250px;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.rating {
+  text-align: end;
+}
+
+.title {
+  text-align: center;
+  padding-top: 5px;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .card-text-wrapper{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(225,225,225,.7);
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.hide {
+  display: none;
+}
+.show {
+  display:block;
+} */
