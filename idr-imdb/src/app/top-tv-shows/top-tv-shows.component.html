@@ -1,0 +1,28 @@
+<h1>Top TV Shows!</h1>
+
+<div>
+  <div *ngIf="postSub| async">
+    <div class="posts" *ngFor="let chunk of postsChunk">
+      <div *ngFor="let post of chunk">
+        <div class="post">
+          <div>
+            <div class="title">
+              {{ post.details.title }}
+            </div>
+            <img class="image" [src]="post.details.image.url" width="150px" height="200px">
+            <div class="rating">
+              {{ post.post.chartRating }} <span style="font-size:120%;color:gold;">&starf;</span>
+            </div>
+            <!-- <div [id]="post.id" class="card-text-wrapper hide">
+              Stuff
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  ..loading
+</ng-template>
